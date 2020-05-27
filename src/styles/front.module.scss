@@ -1,0 +1,166 @@
+@import "theme";
+
+$bg-img: url('../Billeder/newsletterbg.jpg');
+
+.headertext{
+    width: 50%;
+    font-size: $font-verylarge;
+    //letter-spacing: 2px; 
+    position: absolute;
+    text-align: center;
+    margin:0;
+    font-family: 'Lobster', cursive;
+    color: $text-white;
+    transform:translateX(100%);
+    margin-left: -25%;
+    margin-top:12.5%;
+}
+
+.carousel{
+    margin-top: -65px;
+}
+
+.midsection{
+    text-align: center;
+    padding: $padding;
+    margin: $margin;
+    width: 70%;
+    margin: auto;
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+    color: $text-black;
+
+    h4{
+        font-size: $font-large;
+        font-family: 'Lobster', cursive;
+    }
+
+    h5{
+        font-size: $font-regular;
+        font-family: 'Open Sans', sans-serif;    
+    }
+
+    p{
+        font-size: $font-small;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .container{
+        display:grid;
+        margin-top: $spacing;
+    }
+
+    .gridContainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10%;
+    }
+
+    img{
+        border-radius: 50%;
+        width: 100%;
+    }
+}
+
+.signup{
+    text-align: start;
+    height: 50vh;
+    background-image: $bg-img;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h3{
+        font-family: 'Lobster', cursive;
+        padding-top: $spacing *2;
+        font-size: $font-large/2.3;
+        color: $text-white;
+        margin-bottom:0;
+        
+    }
+
+    p{
+        font-size: $font-small;
+        color:$text-white;
+
+    }
+
+    section{
+        transform:translateX(20%)
+    }
+
+    form{
+
+        input{
+            width: 50%; 
+            height: 35px;
+        }
+
+        button{
+            height: 40px;
+            width: 10%;
+            border: none;
+            background-color:$color-button;
+            color:white;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+
+.products{
+    text-align: center;
+    h3{
+        font-size: $font-large;
+        font-family: 'Lobster', cursive;
+        color: $text-black;
+
+    }
+
+}
+
+.gridContainer{
+    color: $text-black;
+    width: 70%;
+    margin:auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: $spacing;
+    margin-bottom: $spacing;
+}
+
+
+.gridItem{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+
+    p{
+        font-size: $font-small;
+    }
+
+    h5{
+        font-size: $font-regular;
+        height: 50px;
+    }
+
+    button{
+        border: solid 1px $color-dark;
+        background-color: $color-white;
+        width: 120px;
+        height: 40px;
+        font-size: $font-small;
+        color: $text-black;
+
+    }
+    
+    img{
+        width: 100%;
+    }
+}
+
+.mainContainer{
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+}

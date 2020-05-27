@@ -1,0 +1,42 @@
+@import "theme";
+
+.container{
+    color: $text-white;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(51,51,51);
+    position: absolute;
+    bottom:0;
+    height: 150px;
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+
+
+    h3 {
+        font-size: $font-large/1.5;
+        font-family: 'Lobster', cursive;
+        margin:0;
+        margin-top:$spacing/2;
+    }
+
+    p{
+        font-size: $font-small;
+        padding-top: 10px;
+    }
+}
+
+.innerContainer{
+    height: 45px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(37,37,37);
+    padding:0;
+    margin:0;
+}
+
+.bottom{
+    height: 25px;
+    background-color: rgb(51,51,51);
+    width: 100%;
+}

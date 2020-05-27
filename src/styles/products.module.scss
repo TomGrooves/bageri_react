@@ -1,0 +1,112 @@
+@import "theme";
+
+.productContent{
+    display: inline-grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 2.5%;
+    min-height: 100vh;
+    padding-bottom: 200px;
+    font-family: 'Open Sans', sans-serif;
+    align-content: start;
+}
+
+.topText{
+    text-align: center;
+    margin:auto;
+    width: 70%;
+    p{
+        padding: $spacing;
+        margin:auto;
+    }
+    h3 {
+        font-size: $font-large/1.5;
+        font-family: 'Lobster', cursive;
+        margin:0;
+        margin-top:$spacing/2;
+        text-align: center;
+    }
+    padding-top: $spacing;
+}
+
+p{
+    font-size: $font-small;
+    padding-top: 10px;
+}
+
+.navigation{
+    display: inline-block;
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin:8px;
+    text-align: right;
+    padding-right:$padding;
+    margin-top:-2%;
+    cursor: pointer;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.gridItem{
+    text-align: center;
+
+    h4{
+        margin:0;
+        height: 50px;
+        margin-top: $margin*2;
+    }
+    p{
+        margin-bottom:4px;
+        height: 70px;
+    }
+
+    button{
+        cursor: pointer;
+        border:none;
+        width: 120px;
+        height:35px;
+        background-color:$color-white;
+        border: solid 1px $color-darker;
+        padding: $padding;
+        margin: $margin;
+    }
+}
+
+
+.productImage{
+    width: auto;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentContainer{
+    width: 70%;
+    margin:auto;
+    p{
+        padding: $spacing;
+        margin:auto;
+    }
+    h3 {
+        font-size: $font-large/1.5;
+        font-family: 'Lobster', cursive;
+        margin:0;
+        margin-top:$spacing/2;
+        text-align: center;
+    }
+    padding: $spacing;
+}
+
+
+.mainContainer{
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+}

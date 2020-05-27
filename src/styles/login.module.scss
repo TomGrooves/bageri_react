@@ -1,0 +1,62 @@
+@import "theme";
+
+.form{
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+    margin:auto;
+    text-align: center;
+
+    input{
+        padding: 8px;
+        display: block;
+        width: 95%;
+        height: 40px;
+        border: none;
+        margin:auto;
+        margin-bottom: 2%;
+    }
+
+    input::placeholder{
+        padding-left: 2%;
+        font-size: $font-regular/ 1.2;
+    }
+
+    input:nth-child(3){
+        height: 140px;
+    }
+    
+    
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: $color-button;
+        border:none;
+        margin-right: $spacing;
+        color: white;
+    }
+}
+
+.success{
+    color: $color-success;
+}
+
+.error{
+    color: $color-error;
+}
+
+.mainContainer{
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+
+    h2{
+        text-align: center;
+        font-size: $font-large /1.5;
+        font-family: 'Lobster', cursive;
+    }
+}

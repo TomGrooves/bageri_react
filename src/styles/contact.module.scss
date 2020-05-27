@@ -1,0 +1,93 @@
+@import "theme";
+
+.mainContainer{
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+    font-family: 'Open Sans', sans-serif;
+
+
+    h2{
+        text-align: center;
+        font-size: $font-large/1.5;
+        font-family: 'Lobster', cursive;
+    }
+    p{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: $spacing;
+    }
+}
+
+.error{
+    color: $color-error;
+}
+
+.success{
+    color: $color-success;
+}
+
+.form{
+    float:left;
+    display: inline-block;
+    width: 45%;
+    //margin-top: 5%;
+
+    input{
+        display: block;
+        width: 95%;
+        height: 40px;
+        margin-bottom: 5%;
+        border: none;
+    }
+
+    input::placeholder{
+        padding-left: 2%;
+        font-size: $font-regular/ 1.2;
+    }
+
+    input:nth-child(3){
+        height: 140px;
+    }
+
+    p{
+        width: auto;
+        display: inline-block;
+        margin-top:0;
+    }
+
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: $color-button;
+        border:none;
+        float:right;
+        margin-right: $spacing;
+        color: white;
+    }
+}
+
+.map{
+    display: inline-block;
+    width: 50%;
+    div{
+        p{
+            display:inline-block;
+            margin:0;
+            padding:0;
+        }
+        h5{
+            margin:0;
+            margin-right: 6px;
+            display: inline;
+        }
+    }
+
+    img{
+        width: 100%; 
+    }
+}
