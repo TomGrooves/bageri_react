@@ -13,6 +13,11 @@
         margin:auto;
         text-align: center;
         font-size: $font-small;
+        @media screen and (max-width: 600px){
+            font-size: 0.7rem;
+            padding:8px;
+            width: auto;
+        }
     }
     p:nth-child(3) {
         cursor: pointer;
@@ -21,7 +26,13 @@
         margin: $margin;
         padding: $padding;
         font-family: 'Lobster', cursive;
+        @media screen and (max-width: 600px){
+            font-size: 1.1rem;
+            width:auto;
+            padding: 8px;
+        }
     }
+
 }
 
 .hidden{

@@ -9,9 +9,7 @@ import {
 function ProductPage (props) {
 
     useEffect(() => {
-        if (!props.catData || props.catData.length <= 0){
             props.HandleSelectedCategory("1")
-        }
     }, [])
 
     return (

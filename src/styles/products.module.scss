@@ -10,6 +10,11 @@
     padding-bottom: 200px;
     font-family: 'Open Sans', sans-serif;
     align-content: start;
+    @media screen and (max-width: 600px){
+        grid-template-columns: 1fr;
+        padding-bottom:800px;
+        height:auto;
+    }
 }
 
 .topText{
@@ -27,7 +32,7 @@
         margin-top:$spacing/2;
         text-align: center;
     }
-    padding-top: $spacing;
+  //  padding-top: $spacing;
 }
 
 p{
@@ -45,6 +50,11 @@ p{
     padding-right:$padding;
     margin-top:-2%;
     cursor: pointer;
+    @media screen and (max-width: 600px){
+        width:50%;
+        text-align: center;
+        margin-bottom:5%;
+    }
 }
 
 .active{
@@ -71,7 +81,7 @@ p{
         height:35px;
         background-color:$color-white;
         border: solid 1px $color-darker;
-        padding: $padding;
+       // padding: $padding;
         margin: $margin;
     }
 }
@@ -100,6 +110,14 @@ p{
         text-align: center;
     }
     padding: $spacing;
+
+    @media screen and (max-width: 600px){
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+    }
 }
 
 
