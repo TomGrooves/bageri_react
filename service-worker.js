@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bageri_react/precache-manifest.ec1164c38da180604ce7ac5095868a24.js"
+  "/bageri_react/precache-manifest.8e78b4e311c6ac0db0f0787f1b1f917f.js"
 );
 
 self.addEventListener('message', (event) => {
