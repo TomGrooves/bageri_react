@@ -100,8 +100,8 @@ function Frontpage (props) {
                     return (
                     <div key={index+"latest"} className={front.gridItem}>
                         <img alt={item.title} src={item.image.fullpath}></img>
-                        <h5 key={index}>{item.title.substring(0, 35).toUpperCase()}</h5>
-                            <p>{item.teaser.substring(0, 100)}..</p>
+                        <h5 key={index}>{item.title.substring(0, 28).toUpperCase()}</h5>
+                            <p>{item.teaser.substring(0, 50)}..</p>
                             <Link to="/displayproduct">
                                 <button onClick={()=>{props.HandleSelectedItem(item.id)}}>SE MERE</button>
                             </Link>

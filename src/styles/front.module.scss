@@ -144,6 +144,11 @@ $bg-img: url('../Billeder/newsletterbg.jpg');
     row-gap: $spacing;
     margin-bottom: $spacing;
     column-gap: 8px;
+    @media screen and (max-width: 800px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin:auto;
+    }
     @media screen and (max-width: 600px){
         grid-template-columns: 1fr 1fr;
         width: 90%;
@@ -159,14 +164,14 @@ $bg-img: url('../Billeder/newsletterbg.jpg');
 
     p{
         font-size: $font-small;
-        height: 65px;
-        margin-bottom: 15%
+        height: 70px;
+       // margin-bottom: 15%
         
     }
 
     h5{
         font-size: $font-regular;
-        height: 50px;
+        height: 70px;
         margin-bottom:0;
     }
 
