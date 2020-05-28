@@ -53,15 +53,18 @@
         width:50%;
         float: left;
         padding: 8px;
+        margin-right: 8px;
     }
 
     p{
         width:fit-content;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-word;
         display:inline;
+        letter-spacing: 1px;
+        word-spacing: 1px;
     }
 
-    padding: 16px;
 }
 
 .ingredients{

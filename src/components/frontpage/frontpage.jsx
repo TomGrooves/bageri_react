@@ -10,28 +10,14 @@ import bannerimg1 from '../../Billeder/slide1.jpg'
 import bannerimg2 from '../../Billeder/slide2.jpg'
 import bannerimg3 from '../../Billeder/slide3.jpg'
 
-import imgArrImg1 from '../../Billeder/brod/1.png'
-import imgArrImg2 from '../../Billeder/brod/2.png'
-import imgArrImg3 from '../../Billeder/brod/3.png'
-import imgArrImg4 from '../../Billeder/brod/4.png'
-import imgArrImg5 from '../../Billeder/brod/5.png'
-import imgArrImg6 from '../../Billeder/brod/6.png'
-import imgArrImg7 from '../../Billeder/brod/7.png'
-import imgArrImg8 from '../../Billeder/brod/8.png'
+
+import {
+    Link
+} from 'react-router-dom';
+
 
 
 function Frontpage (props) {
-
-    var imgArr = [
-        {url: imgArrImg1},
-        {url: imgArrImg2},
-        {url: imgArrImg3},
-        {url: imgArrImg4},
-        {url: imgArrImg5},
-        {url: imgArrImg6},
-        {url: imgArrImg7},
-        {url: imgArrImg8}
-    ]
 
     var newItems = [
         {url1: bannerimg1},
@@ -46,10 +32,10 @@ function Frontpage (props) {
                     {
                         newItems.map((item, index) => {
                         return( 
-                            <>
+                            <div key={index}>
                                 <h3 className={front.headertext}>Vi elsker at lave brød</h3>
-                                <Item key={index} item={item}/>
-                            </>
+                                <Item item={item}/>
+                            </div>
                         )
                     })
                     }
@@ -112,11 +98,13 @@ function Frontpage (props) {
                 {props.data.categories[0].products.map((item, index) => {
                     if (index < 8) {
                     return (
-                    <div className={front.gridItem}>
-                        <img alt={item.title} src={imgArr[index].url}></img>
+                    <div key={index+"latest"} className={front.gridItem}>
+                        <img alt={item.title} src={item.image.fullpath}></img>
                         <h5 key={index}>{item.title.substring(0, 35).toUpperCase()}</h5>
-                            <p>{item.teaser.substring(0, 35)}..</p>
-                        <button>SE MERE</button>
+                            <p>{item.teaser.substring(0, 100)}..</p>
+                            <Link to="/displayproduct">
+                                <button onClick={()=>{props.HandleSelectedItem(item.id)}}>SE MERE</button>
+                            </Link>
                     </div>)
                     }
                 })}

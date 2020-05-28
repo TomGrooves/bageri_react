@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import product from '../../styles/products.module.scss';
 import {
     Link
@@ -7,8 +7,6 @@ import {
 
 
 function ProductPage (props) {
-
-    const [active, setActive] = useState(false);
 
     useEffect(() => {
         if (!props.catData || props.catData.length <= 0){
@@ -26,7 +24,7 @@ function ProductPage (props) {
         <section className={product.contentContainer}>
         <div className={product.navigation}>
         {props.data.categories && props.data.categories.map((item)=>{
-            return <p onClick={()=>{props.HandleSelectedCategory(item.id)}}>{item.title.toUpperCase()}</p>})}
+            return <p className={props.active === item.id ? product.active : ""} onClick={()=>{props.HandleSelectedCategory(item.id)}}>{item.title.toUpperCase()}</p>})}
         </div>
         
         <div className={product.productContent}>

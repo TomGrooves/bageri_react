@@ -46,7 +46,7 @@ function Nav (props) {
     }
 
     return (
-        <navbar>
+        <nav>
             <div className={navstyle.navbar}>
                 <Link to="/">
                     <p>FORSIDE</p>
@@ -69,7 +69,7 @@ function Nav (props) {
                     <p>LOGIN</p>
                 </Link>
             </div>
-        </navbar>
+        </nav>
     )
 }
 

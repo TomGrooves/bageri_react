@@ -31,6 +31,7 @@ function App() {
   const [catData, setCatData] = useState([]);
   const [sessionToken, setSessionToken] = useState("");
   const [loading, setLoading] = useState(true);
+  const [active, setActive] = useState();
 
   //Set Category handler function
 const HandleSelectedCategory = (target) => {
@@ -40,6 +41,8 @@ const HandleSelectedCategory = (target) => {
           .then(response => response.json())
           .then(json => setCatData(json))
           .catch(error => console.log(error))
+
+  setActive(target)
 }
 
 //Set selected item handler function
@@ -49,7 +52,6 @@ const HandleSelectedItem = (target) => {
         .then(response => response.json())
         .then(json => setSingleData(json))
         .catch(error => console.log(error))
-
 }
 
 const validateEmail = (mail) =>  
@@ -77,6 +79,7 @@ if (allData.categories && allData.news && loading){
       <Switch>
           <Route path="/products">
             <ProductPage
+              active={active}
               data={allData}
               singleData={singleData}
               catData={catData}
@@ -108,7 +111,11 @@ if (allData.categories && allData.news && loading){
           </Route>
 
           <Route path="/">
-              {!loading ? <Frontpage data={allData}></Frontpage>
+              {!loading ? 
+              <Frontpage 
+                data={allData}
+                HandleSelectedItem={HandleSelectedItem}
+              ></Frontpage>
               : "loading"}
           </Route>
     </Switch>

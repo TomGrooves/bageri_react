@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import singleproduct from '../../styles/singleproduct.module.scss'
-import backupImg from '../../Billeder/brod/3.png'
-import ProductPage from './productPage';
+import backupImg from '../../Billeder/brod/article.jpg'
 
 function SingleProductPage(props) {
 
@@ -94,7 +93,10 @@ function SingleProductPage(props) {
         <div className={singleproduct.mainContainer}>
             <section className={singleproduct.contentGrid}>
                 <img alt={props.singleData.title} src={image}></img>
+                {props.singleData.title ? 
                 <p>{props.singleData.description}</p>
+                    : <p>Gå tilbage til start for at vælge et produkt</p>
+                }
             </section>
 
             <section className={singleproduct.ingredients}>
