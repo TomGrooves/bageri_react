@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f693786aae16486260ad0ca28c1907b",
+    "revision": "5c9fcfd4298fb03695371f394545709a",
     "url": "/bageri_react/index.html"
   },
   {
-    "revision": "d6357833a83360253ab3",
-    "url": "/bageri_react/static/css/main.7d6da694.chunk.css"
+    "revision": "fe5cf136dc6de9a84e25",
+    "url": "/bageri_react/static/css/main.0800b4b3.chunk.css"
   },
   {
     "revision": "108ac2e40c366fbd0741",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bageri_react/static/js/2.087439c3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d6357833a83360253ab3",
-    "url": "/bageri_react/static/js/main.fdcf1780.chunk.js"
+    "revision": "fe5cf136dc6de9a84e25",
+    "url": "/bageri_react/static/js/main.659bc2a0.chunk.js"
   },
   {
     "revision": "2b6fac0b48de89e0c198",

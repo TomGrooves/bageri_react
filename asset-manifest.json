@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bageri_react/static/css/main.7d6da694.chunk.css",
-    "main.js": "/bageri_react/static/js/main.fdcf1780.chunk.js",
-    "main.js.map": "/bageri_react/static/js/main.fdcf1780.chunk.js.map",
+    "main.css": "/bageri_react/static/css/main.0800b4b3.chunk.css",
+    "main.js": "/bageri_react/static/js/main.659bc2a0.chunk.js",
+    "main.js.map": "/bageri_react/static/js/main.659bc2a0.chunk.js.map",
     "runtime-main.js": "/bageri_react/static/js/runtime-main.3837a905.js",
     "runtime-main.js.map": "/bageri_react/static/js/runtime-main.3837a905.js.map",
     "static/js/2.087439c3.chunk.js": "/bageri_react/static/js/2.087439c3.chunk.js",
     "static/js/2.087439c3.chunk.js.map": "/bageri_react/static/js/2.087439c3.chunk.js.map",
     "index.html": "/bageri_react/index.html",
-    "precache-manifest.8e78b4e311c6ac0db0f0787f1b1f917f.js": "/bageri_react/precache-manifest.8e78b4e311c6ac0db0f0787f1b1f917f.js",
+    "precache-manifest.05678c11c404d39b22d30661e481d56d.js": "/bageri_react/precache-manifest.05678c11c404d39b22d30661e481d56d.js",
     "service-worker.js": "/bageri_react/service-worker.js",
-    "static/css/main.7d6da694.chunk.css.map": "/bageri_react/static/css/main.7d6da694.chunk.css.map",
+    "static/css/main.0800b4b3.chunk.css.map": "/bageri_react/static/css/main.0800b4b3.chunk.css.map",
     "static/js/2.087439c3.chunk.js.LICENSE.txt": "/bageri_react/static/js/2.087439c3.chunk.js.LICENSE.txt",
     "static/media/article.jpg": "/bageri_react/static/media/article.82ca3e78.jpg",
     "static/media/article2.jpg": "/bageri_react/static/media/article2.797c9c26.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.3837a905.js",
     "static/js/2.087439c3.chunk.js",
-    "static/css/main.7d6da694.chunk.css",
-    "static/js/main.fdcf1780.chunk.js"
+    "static/css/main.0800b4b3.chunk.css",
+    "static/js/main.659bc2a0.chunk.js"
   ]
 }
