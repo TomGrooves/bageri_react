@@ -21,14 +21,14 @@ function ProductPage (props) {
 
         <section className={product.contentContainer}>
         <div className={product.navigation}>
-        {props.data.categories && props.data.categories.map((item)=>{
-            return <p className={props.active === item.id ? product.active : ""} onClick={()=>{props.HandleSelectedCategory(item.id)}}>{item.title.toUpperCase()}</p>})}
+        {props.data.categories && props.data.categories.map((item, index)=>{
+            return <p key={index} className={props.active === item.id ? product.active : ""} onClick={()=>{props.HandleSelectedCategory(item.id)}}>{item.title.toUpperCase()}</p>})}
         </div>
         
         <div className={product.productContent}>
         {props.catData.products && !props.singleData && props.catData.products.products.map((item, index) => {
             return (
-        <div className={product.gridItem}>
+        <div key={index} className={product.gridItem}>
             <div className={product.productImage} style={{backgroundImage: `url(${item.image.fullpath})`}}/>
             <h4>{item.title.substring(0, 30)}</h4>
             <p>{item.teaser.substring(0, 60)+ "..."}</p>

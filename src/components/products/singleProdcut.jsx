@@ -8,7 +8,6 @@ function SingleProductPage(props) {
     const [commentTitle, updateCommentTitle] = useState("")
     const [commentData, setCommentData] = useState([])
 
-    console.log(props.singleData)
     let id = props.singleData.id
     
     useEffect(() => {
@@ -27,7 +26,6 @@ function SingleProductPage(props) {
         }
     }, [id])
     
-    console.log(commentData)
 
     const sendComment = (e) =>{
         e.preventDefault()
@@ -101,8 +99,8 @@ function SingleProductPage(props) {
 
             <section className={singleproduct.ingredients}>
                 <h4>Ingredienser</h4>
-                { props.singleData.ingredients && props.singleData.ingredients.map((item) => {
-                    return <div><p>{item.amount} {item.unit_name}, {item.ingredient_title}</p></div>
+                { props.singleData.ingredients && props.singleData.ingredients.map((item, index) => {
+                    return <div key={index}><p>{item.amount} {item.unit_name}, {item.ingredient_title}</p></div>
                 })}
             </section>
 
